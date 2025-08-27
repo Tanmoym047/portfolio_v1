@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/5ee0540729.js" crossorigin="anonymous"></script>
+
+  <!-- custom tailwind -->
+  <style type="text/tailwindcss">
+    @theme {
+          --color-clifford: #da373d;
+        }
+      </style>
+
+  <!-- custom font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+    .font-ubuntu {
+      font-family: "Ubuntu Sans", sans-serif;
+    }
+
+    .font-inter {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+
+  <!-- title -->
+  <title>Tanmoy's Portfolio</title>
+</head>
+
+<body class="container mx-auto">
+  <header class="container mx-auto">
+    <!-- navbar -->
+    <section>
+      <div class="navbar container bg-base-100 shadow-sm fixed z-10">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class=" btn-ghost text-xl font-ubuntu font-bold">Tanmoy's Portfolio</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <section class="md:pt-6">
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="src/images/20250602_172707~2.jpg" class="max-w-64 lg:max-w-96 rounded-3xl shadow-2xl lg:ml-30" />
+          <div class="text-center space-y-2 lg:space-y-6">
+            <h4 class="text-xl lg:text-4xl font-inter">Hi, this is</h4>
+            <h1 class="text-3xl lg:text-7xl font-bold font-ubuntu">TANMOY MRIDHA</h1>
+            <p class="text-lg lg:text-2xl font-inter">
+              An aspiring MERN stack developer & a cyber-security enthusiast...
+            </p>
+            <div>
+              <button class="btn btn-ghost ">
+                <i class="fa-brands fa-github text-2xl lg:text-4xl"></i>
+              </button>
+              <button class="btn btn-ghost ">
+                <i class="fa-brands fa-linkedin text-2xl  lg:text-4xl"></i>
+              </button>
+              <button class="btn btn-ghost ">
+                <i class="fa-brands fa-facebook-f text-2xl  lg:text-4xl"></i>
+              </button>
+              <button class="btn btn-ghost ">
+                <i class="fa-brands fa-x-twitter text-2xl  lg:text-4xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+    <!-- Projects -->
+    <section class="pt-10 lg:pt-20 border-t-4 rounded-3xl">
+      <!-- section header -->
+      <div class="pb-12 text-center space-y-5">
+        <h1 class="font-ubuntu font-bold text-4xl">PROJECTS</h1>
+
+      </div>
+
+      <div class="grid-cols-1 lg:grid-cols-2">
+        <div class="card bg-base-300 shadow-sm pt-4">
+          <div class="card-body ">
+            <h2 class="font-bold font-ubuntu text-3xl">P-Ticket</h2>
+            <p class="text-lg font-inter">A Bus Ticketing landing page where users can purchase upto 4 tickets at a time
+              and use discount coupon </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-neutral">Go to Link</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </section>
+  </main>
+</body>
+
+</html>

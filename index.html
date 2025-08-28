@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -54,7 +54,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <ul tabindex="0" class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
               <li><a href="#home">Home</a></li>
               <li><a href="#edu">Education & Skillset</a></li>
               <li>
@@ -63,9 +63,15 @@
                   <li><a href="#web">Web Projects</a></li>
                   <li><a href="#app">App Projects</a></li>
                   <li><a href="#console">Console Projects</a></li>
+                  <li></li>
                 </ul>
               </li>
               <li><a href="#awards">Awards & Certifications</a></li>
+              <li>
+                <button id="themeToggleBtn" class="btn btn-ghost text-lg">
+                    🌙
+                </button>
+              </li>
             </ul>
           </div>
           <a href="#home" class="btn btn-ghost text-xl">Tanmoy's Portfolio</a>
@@ -81,10 +87,16 @@
                   <li><a href="#web">Web Projects</a></li>
                   <li><a href="#app">App Projects</a></li>
                   <li><a href="#console">Console Projects</a></li>
+
                 </ul>
               </details>
             </li>
             <li><a href="#awards">Awards & Certifications</a></li>
+            <!-- <li>
+              <button class="themeToggleBtn" class="btn btn-ghost text-lg">
+                  🌙
+              </button>
+            </li> -->
           </ul>
         </div>
         <div class="navbar-end">
@@ -487,7 +499,7 @@
               <h2 class="font-bold font-ubuntu text-3xl border-b-2 p-2 pb-3">MyCash</h2>
               <p class="text-lg font-inter p-2">A C++ console interactive digital financial service application</p>
               <div class="card-actions justify-end">
-                
+
                 <a href="https://github.com/Tanmoym047/mycash" target="_blank">
                   <button class="btn btn-neutral">GitHub Repo</button>
                 </a>
@@ -504,7 +516,7 @@
               <h2 class="font-bold font-ubuntu text-3xl border-b-2 p-2 pb-3">Gym Database</h2>
               <p class="text-lg font-inter p-2">A C++ console interactive GYM database application</p>
               <div class="card-actions justify-end">
-                
+
                 <a href="https://github.com/Tanmoym047/gym-database" target="_blank">
                   <button class="btn btn-neutral">GitHub Repo</button>
                 </a>
@@ -522,7 +534,7 @@
               <h2 class="font-bold font-ubuntu text-3xl border-b-2 p-2 pb-3">Tic-Tac-Toe-Game</h2>
               <p class="text-lg font-inter p-2">A simple C++ tic-tac-toe game</p>
               <div class="card-actions justify-end">
-                
+
                 <a href="https://github.com/Tanmoym047/Tic-Tac-Toe-Game" target="_blank">
                   <button class="btn btn-neutral">GitHub Repo</button>
                 </a>
@@ -567,5 +579,20 @@
     </section>
   </main>
 </body>
+<script>
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const htmlTag = document.documentElement;
+
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = htmlTag.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+      htmlTag.setAttribute('data-theme', 'light');
+      themeToggleBtn.textContent = '🌙';
+    } else {
+      htmlTag.setAttribute('data-theme', 'dark');
+      themeToggleBtn.textContent = '☀️';
+    }
+  });
+</script>
 
 </html>

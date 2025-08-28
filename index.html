@@ -68,7 +68,7 @@
               </li>
               <li><a href="#awards">Awards & Certifications</a></li>
               <li>
-                <button id="themeToggleBtn" class="btn btn-ghost text-lg">
+                <button class="theme-toggle-btn" class="btn btn-ghost text-lg">
                     🌙
                 </button>
               </li>
@@ -92,11 +92,11 @@
               </details>
             </li>
             <li><a href="#awards">Awards & Certifications</a></li>
-            <!-- <li>
-              <button class="themeToggleBtn" class="btn btn-ghost text-lg">
+            <li>
+              <button class="theme-toggle-btn" class="btn btn-ghost text-lg">
                   🌙
               </button>
-            </li> -->
+            </li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -580,18 +580,20 @@
   </main>
 </body>
 <script>
-  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
   const htmlTag = document.documentElement;
 
-  themeToggleBtn.addEventListener('click', () => {
-    const currentTheme = htmlTag.getAttribute('data-theme');
-    if (currentTheme === 'dark') {
-      htmlTag.setAttribute('data-theme', 'light');
-      themeToggleBtn.textContent = '🌙';
-    } else {
-      htmlTag.setAttribute('data-theme', 'dark');
-      themeToggleBtn.textContent = '☀️';
-    }
+  themeToggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const currentTheme = htmlTag.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        htmlTag.setAttribute('data-theme', 'light');
+        themeToggleBtns.forEach(button => button.textContent = '🌙');
+      } else {
+        htmlTag.setAttribute('data-theme', 'dark');
+        themeToggleBtns.forEach(button => button.textContent = '☀️');
+      }
+    });
   });
 </script>
 

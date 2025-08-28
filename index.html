@@ -45,45 +45,6 @@
   <header class="container mx-auto">
     <!-- navbar -->
     <section>
-      <!-- <div class="navbar container bg-base-100 shadow-sm fixed z-10">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-            </div>
-            <ul tabindex="0" class="menu menu-lg dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 ">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class=" btn-ghost text-xl font-ubuntu font-bold">Tanmoy's Portfolio</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-              </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
-        </div>
-      </div> -->
       <div class="navbar container bg-base-100 shadow-sm fixed z-10">
         <div class="navbar-start">
           <div class="dropdown">
@@ -94,32 +55,36 @@
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#edu">Education & Skillset</a></li>
               <li>
-                <a>Parent</a>
+                <a href="#projects">Projects</a>
                 <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                  <li><a href="#web">Web Projects</a></li>
+                  <li><a href="#app">App Projects</a></li>
+                  <li><a href="#console">Console Projects</a></li>
                 </ul>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a href="#awards">Awards & Certifications</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">Tanmoy's Portfolio</a>
+          <a href="#home" class="btn btn-ghost text-xl">Tanmoy's Portfolio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#edu">Education & Skillset</a></li>
             <li>
               <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                <summary>Projects</summary>
+                <ul class="p-2 ">
+                  <li><a href="#web">Web Projects</a></li>
+                  <li><a href="#app">App Projects</a></li>
+                  <li><a href="#console">Console Projects</a></li>
                 </ul>
               </details>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a href="#awards">Awards & Certifications</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -129,10 +94,11 @@
     </section>
 
     <!-- banner -->
-    <section class="md:pt-6">
+    <section id="home" class="md:pt-6">
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse ">
-          <img src="src/images/20250602_172707~2.jpg" class="max-w-64 lg:max-w-96 rounded-3xl shadow-2xl lg:ml-30 m-4" />
+          <img src="src/images/20250602_172707~2.jpg"
+            class="max-w-64 lg:max-w-96 rounded-3xl shadow-2xl lg:ml-30 m-4" />
           <div class="text-center space-y-2 lg:space-y-6 lg:p-4">
             <h4 class="text-xl lg:text-4xl font-inter">Hi, this is</h4>
             <h1 class="text-3xl lg:text-5xl font-bold font-ubuntu">TANMOY MRIDHA</h1>
@@ -140,18 +106,26 @@
               An aspiring MERN stack developer & a cyber-security enthusiast...
             </p>
             <div>
-              <button class="btn btn-ghost ">
-                <i class="fa-brands fa-github text-2xl lg:text-4xl"></i>
-              </button>
-              <button class="btn btn-ghost ">
-                <i class="fa-brands fa-linkedin text-2xl  lg:text-4xl"></i>
-              </button>
-              <button class="btn btn-ghost ">
-                <i class="fa-brands fa-facebook-f text-2xl  lg:text-4xl"></i>
-              </button>
-              <button class="btn btn-ghost ">
-                <i class="fa-brands fa-x-twitter text-2xl  lg:text-4xl"></i>
-              </button>
+              <a href="https://github.com/Tanmoym047" target="_blank">
+                <button class="btn btn-ghost ">
+                  <i class="fa-brands fa-github text-2xl lg:text-4xl"></i>
+                </button>
+              </a>
+              <a href="https://www.linkedin.com/in/hyperbola047/" target="_blank">
+                <button class="btn btn-ghost ">
+                  <i class="fa-brands fa-linkedin text-2xl  lg:text-4xl"></i>
+                </button>
+              </a>
+              <a href="https://www.facebook.com/hyperInsane.047" target="_blank">
+                <button class="btn btn-ghost ">
+                  <i class="fa-brands fa-facebook-f text-2xl  lg:text-4xl"></i>
+                </button>
+              </a>
+              <a href="https://x.com/TanmoyMridha" target="_blank">
+                <button class="btn btn-ghost ">
+                  <i class="fa-brands fa-x-twitter text-2xl  lg:text-4xl"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -161,13 +135,13 @@
 
   <main>
     <!-- Education & Skillset -->
-    <section class="pt-10 lg:pt-14 border-t-4 rounded-3xl mt-4">
+    <section id="edu" class="pt-10 lg:pt-14 border-t-4 rounded-3xl mt-6">
       <!-- section header -->
       <div class="pb-12 text-center space-y-5">
         <h1 class="font-ubuntu font-bold text-4xl">Education & Skillset</h1>
       </div>
 
-      <div class="flex flex-col gap-4 lg:flex-row justify-between">
+      <div class="flex flex-col-reverse gap-4 lg:flex-row justify-between">
         <!-- Education -->
         <div class="space-y-4">
           <!-- RUET -->
@@ -198,7 +172,7 @@
 
             <!-- web development -->
             <li class="list-row card-body border-b-2">
-              
+
               <div class="list-col-grow space-y-4">
                 <h2 class="font-extrabold text-xl">Web Development</h2>
                 <div class="text-xs uppercase font-semibold opacity-80 pt-2 pb-2 space-y-2">
@@ -216,7 +190,7 @@
 
             <!-- Database -->
             <li class="list-row card-body border-b-2">
-              
+
               <div class="list-col-grow space-y-4">
                 <h2 class="font-extrabold text-xl">Database</h2>
                 <div class="text-xs uppercase font-semibold opacity-80">
@@ -246,13 +220,14 @@
     </section>
 
     <!-- Projects -->
-    <section class="pt-10 lg:pt-14 border-t-4 rounded-3xl mt-4">
+    <section id="projects" class="pt-10 lg:pt-14 border-t-4 rounded-3xl mt-6">
       <!-- section header -->
       <div class="pb-12 text-center space-y-5">
         <h1 class="font-ubuntu font-bold text-4xl">PROJECTS</h1>
       </div>
+      
       <!-- Web Development -->
-      <div class="pb-12 text-center space-y-5">
+      <div id="web" class="pb-12 text-center space-y-5">
         <h1 class="font-ubuntu font-bold text-3xl underline">Web Development</h1>
       </div>
 
@@ -395,7 +370,7 @@
 
 
       <!-- App Development -->
-      <div class="pb-12 text-center space-y-5 mt-16">
+      <div id="app" class="pb-12 text-center space-y-5 mt-16">
         <h1 class="font-ubuntu font-bold text-3xl underline">App Development</h1>
       </div>
 
@@ -453,7 +428,7 @@
       </div>
 
       <!-- Console Applications -->
-      <div class="pb-12 text-center space-y-5 mt-16">
+      <div id="console" class="pb-12 text-center space-y-5 mt-16">
         <h1 class="font-ubuntu font-bold text-3xl underline">Console Applications</h1>
       </div>
 
@@ -508,7 +483,7 @@
     </section>
 
     <!-- Awards & Certifications -->
-    <section class="pt-10 lg:pt-14 border-t-4 rounded-3xl mt-4 mb-">
+    <section id="awards" class="pt-10 lg:pt-14 border-t-4 rounded-3xl mt-6 mb-6">
       <!-- section header -->
       <div class="pb-12 text-center space-y-5">
         <h1 class="font-ubuntu font-bold text-4xl">Awards & Certifications</h1>
